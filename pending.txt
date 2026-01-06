@@ -1,0 +1,5 @@
+forgot password
+edit email later with otp 
+use cookies for jwt middle ware 
+use zod checkers while loging in (dont remember why)
+alter images table with column thumbnail boolean (only one image per variant can be true (implement this db rlue in db))

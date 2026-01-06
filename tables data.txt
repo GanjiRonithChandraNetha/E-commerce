@@ -1,0 +1,76 @@
+data in pg tables
+
+INSERT INTO products (product_name, product_description, status)
+VALUES
+('iPhone 15', 'Apple iPhone 15 smartphone', 'active'),
+('Samsung Galaxy S23', 'Samsung flagship Android phone', 'active'),
+('MacBook Air M2', 'Apple MacBook Air with M2 chip', 'active'),
+('Nike Air Max', 'Comfortable running shoes', 'active'),
+('Sony WH-1000XM5', 'Noise cancelling headphones', 'active');
+
+INSERT INTO product_variants (product_id, variant_name, stock, price, flag)
+VALUES
+-- iPhone 15
+(1, '128GB Black', 50, 79999.00, true),
+(1, '256GB Blue', 30, 89999.00, true),
+
+-- Samsung Galaxy S23
+(2, '128GB Phantom Black', 40, 74999.00, true),
+(2, '256GB Cream', 20, 84999.00, true),
+
+-- MacBook Air M2
+(3, '8GB RAM 256GB SSD', 15, 114999.00, true),
+(3, '16GB RAM 512GB SSD', 10, 144999.00, true),
+
+-- Nike Air Max
+(4, 'Size 9 Black', 60, 9999.00, true),
+(4, 'Size 10 White', 50, 9999.00, true),
+
+-- Sony Headphones
+(5, 'Black', 25, 29999.00, true),
+(5, 'Silver', 20, 29999.00, true);
+
+
+INSERT INTO images (variant_id, url) VALUES
+-- Product 1: Mobile (128GB Black)
+(7, 'https://cdn.example.com/products/mobile1/128-black/front.jpg'),
+(7, 'https://cdn.example.com/products/mobile1/128-black/back.jpg'),
+(7, 'https://cdn.example.com/products/mobile1/128-black/side.jpg'),
+
+-- Product 1: Mobile (256GB Blue)
+(8, 'https://cdn.example.com/products/mobile1/256-blue/front.jpg'),
+(8, 'https://cdn.example.com/products/mobile1/256-blue/back.jpg'),
+(8, 'https://cdn.example.com/products/mobile1/256-blue/side.jpg'),
+
+-- Product 2: Mobile (128GB Phantom Black)
+(9, 'https://cdn.example.com/products/mobile2/128-phantom/front.jpg'),
+(9, 'https://cdn.example.com/products/mobile2/128-phantom/back.jpg'),
+
+-- Product 2: Mobile (256GB Cream)
+(10, 'https://cdn.example.com/products/mobile2/256-cream/front.jpg'),
+(10, 'https://cdn.example.com/products/mobile2/256-cream/back.jpg'),
+
+-- Product 3: Laptop (8GB RAM 256GB SSD)
+(11, 'https://cdn.example.com/products/laptop1/8gb/front.jpg'),
+(11, 'https://cdn.example.com/products/laptop1/8gb/keyboard.jpg'),
+
+-- Product 3: Laptop (16GB RAM 512GB SSD)
+(12, 'https://cdn.example.com/products/laptop1/16gb/front.jpg'),
+(12, 'https://cdn.example.com/products/laptop1/16gb/keyboard.jpg'),
+(12, 'https://cdn.example.com/products/laptop1/16gb/ports.jpg'),
+
+-- Product 4: Shoes (Size 9 Black)
+(13, 'https://cdn.example.com/products/shoes1/black/front.jpg'),
+(13, 'https://cdn.example.com/products/shoes1/black/sole.jpg'),
+
+-- Product 4: Shoes (Size 10 White)
+(14, 'https://cdn.example.com/products/shoes1/white/front.jpg'),
+(14, 'https://cdn.example.com/products/shoes1/white/sole.jpg'),
+
+-- Product 5: Headphones (Black)
+(15, 'https://cdn.example.com/products/headphones/black/front.jpg'),
+(15, 'https://cdn.example.com/products/headphones/black/side.jpg'),
+
+-- Product 5: Headphones (Silver)
+(16, 'https://cdn.example.com/products/headphones/silver/front.jpg'),
+(16, 'https://cdn.example.com/products/headphones/silver/side.jpg');

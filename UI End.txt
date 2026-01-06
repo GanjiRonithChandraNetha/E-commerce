@@ -1,0 +1,57 @@
+UI End
+---------
+login page
+- email/password login
+- phone otp login (optional)
+- google / facebook login
+- forgot password
+
+profile 
+- edit profile
+- manage addresses
+- view past orders
+- wishlist
+
+product search page
+- suggestions
+
+product browsing page
+- filters
+- sorting
+- product list grid
+
+home page
+- banners
+- product categories
+- subcategories
+
+product details page
+- product image (carousel)
+- zoom images
+- title , description
+- add to cart/buy now
+- stock availability
+- available options
+- rating section
+- delivery estimation
+
+cart & checkout page
+- add/remove items
+- update quantity
+- auto-save cart
+- apply coupon codes
+- shipping method selection
+- order summary 
+- delivery options
+
+payments
+-Razorpay
+-Stripe
+-PayPal
+-Cash on Delivery (COD)
+(Support)
+-UPI
+-Credit/Debit cards
+-Net banking
+-Wallets
+
